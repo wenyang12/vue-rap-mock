@@ -7,11 +7,17 @@
 
 <script>
 import Hello from './components/Hello'
+import request from 'superagent'
 
 export default {
   name: 'app',
   components: {
     Hello
+  },
+  mounted () {
+    request.post('api/getAge').then(res => {
+      console.log(res)
+    })
   }
 }
 </script>

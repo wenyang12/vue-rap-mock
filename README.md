@@ -147,3 +147,5 @@ npm run build
 npm run mock
 
 ```
+
+ps： 首先在一个bash里执行 `npm run mock` 启动rap服务器，然后在打开一个bash执行`npm run dev ` 执行项目即可
